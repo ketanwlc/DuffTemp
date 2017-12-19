@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <LinearLayout    android:layout_height="@dimen/toolbar_height"
+        android:layout_width="match_parent"
+        android:gravity="center">
+
+        <include layout="@layout/toolbar_profile_setting"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.85"
+        android:background="@color/toolbar_new"
+        android:gravity="center">
+
+    <FrameLayout
+        android:id="@+id/frame_photo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:background="@color/gray">
+
+        <TextView
+            android:text="@string/change_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:id="@+id/tv_add_photo"/>
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView3" />
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_login_left"
+        android:layout_marginRight="@dimen/margin_login_left"
+        android:text="@string/congratulation"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        fontPath="@string/font_heading_black"
+        android:textColor="@color/black"
+        android:onClick="onClick" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_login_left"
+        android:layout_marginRight="@dimen/margin_login_left"
+        android:text="@string/badge_detail_msg"
+        android:gravity="center"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dray_much"
+        android:onClick="onClick" />
+    <Space android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.6"/>
+
+
+    <View android:layout_height="@dimen/profile_view_line_height"
+        android:layout_width="match_parent"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_order_badges"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:onClick="onClick"
+        android:layout_height="@dimen/btn_hieght_profile_setting"
+        android:background="@color/white"
+        android:gravity="center">
+
+
+        <TextView
+            android:text="@string/order_badges"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:paddingLeft="@dimen/margin_login_left"
+            android:textColor="@color/black"
+            android:id="@+id/tv_beacon_setting" />
+
+
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/icon_text_size_arrow"
+            android:text="@string/right_icon"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+    <View android:layout_height="@dimen/profile_view_line_height"
+        android:layout_width="match_parent"
+        android:background="@color/gray"/>
+
+    <Space android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.4"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/date_achived"
+        android:paddingBottom="5dp"
+        android:gravity="center_horizontal|bottom"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:textColor="@color/dray_much"
+        android:onClick="onClick" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_login_left"
+        android:layout_marginRight="@dimen/margin_login_left"
+        android:text="@string/view_post"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal|bottom"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:onClick="onClick" />
+
+    <Space android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.1"/>
+        </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <LinearLayout
+    android:id="@+id/ll_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:text="@string/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        android:onClick="onClick"
+        android:paddingLeft="20dp"
+        android:id="@+id/tv_cancel"/>
+
+
+        <TextView
+            android:text="@string/my_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            fontPath="@string/font_title_black"
+            android:layout_weight="0.9"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_home_title_textsize"
+            android:onClick="onClick"
+            android:id="@+id/tv_my_details"/>
+
+        <TextView
+        android:id="@+id/save"
+        android:text="@string/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="20dp"
+        fontPath="@string/font_heading_black"
+        android:textColor="@color/red"
+        android:onClick="onClick"
+        android:textSize="@dimen/btn_home_title_textsize_sub" />
+
+    </LinearLayout>
+
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ll_bottom"
+        android:background="@color/toolbar_new">
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar_new">
+
+
+            <FrameLayout
+                android:id="@+id/frame_photo"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:background="@drawable/profile">
+
+                <TextView
+                    android:text="@string/change_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textColor="@color/red"
+                    android:textSize="16sp"
+                    android:id="@+id/tv_add_photo"/>
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:scaleType="fitXY"
+                    android:id="@+id/img_profile" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:text="@string/username"
+                android:textSize="@dimen/login_text_btn"
+                android:layout_height="wrap_content"
+                fontPath="@string/font_heading_black"
+                android:layout_weight="0.9"
+                android:textColor="@color/black"
+                android:onClick="onClick" />
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+            <EditText
+                android:text="dufflerman"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:textSize="@dimen/textsize_15"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:id="@+id/et_username"
+                android:background="@android:color/transparent"/>
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/icon_valid"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:layout_marginLeft="@dimen/margin_login_left"
+                    android:layout_marginRight="@dimen/margin_login_left"
+                    android:layout_gravity="right|bottom"
+                    android:textSize="@dimen/btn_home_title_textsize"
+                    android:gravity="bottom|right"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/check_valid_icon"
+                    android:textColor="@color/green"/>
+            </FrameLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:text="@string/firstname"
+                android:paddingTop="@dimen/margin_bottom_20"
+                android:textSize="@dimen/login_text_btn"
+                android:layout_height="wrap_content"
+                fontPath="@string/font_heading_black"
+                android:layout_weight="0.9"
+                android:textColor="@color/black"
+                android:onClick="onClick" />
+            <EditText
+                android:text="Kristof Saelen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:textSize="@dimen/textsize_15"
+                android:inputType="text"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:textColor="@color/black"
+                android:id="@+id/et_firstname"
+                android:background="@android:color/transparent"/>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:text="@string/lastname"
+                android:paddingTop="@dimen/margin_bottom_20"
+                android:textSize="@dimen/login_text_btn"
+                android:layout_height="wrap_content"
+                fontPath="@string/font_heading_black"
+                android:layout_weight="0.9"
+                android:textColor="@color/black"
+                android:onClick="onClick" />
+            <EditText
+                android:text="Kristof Saelen"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:textSize="@dimen/textsize_15"
+                android:inputType="text"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:textColor="@color/black"
+                android:id="@+id/et_lastname"
+                android:background="@android:color/transparent"/>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:text="@string/streetname"
+                android:paddingTop="@dimen/margin_bottom_20"
+                android:textSize="@dimen/login_text_btn"
+                android:layout_height="wrap_content"
+                fontPath="@string/font_heading_black"
+                android:layout_weight="0.9"
+                android:textColor="@color/black"
+                android:onClick="onClick" />
+            <EditText
+                android:text="F de Merodestraat"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:textSize="@dimen/textsize_15"
+                android:inputType="text"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:textColor="@color/black"
+                android:id="@+id/et_street"
+                android:background="@android:color/transparent"/>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:text="@string/adressline"
+                android:paddingTop="@dimen/margin_bottom_20"                android:textSize="@dimen/login_text_btn"
+                android:layout_height="wrap_content"
+                fontPath="@string/font_heading_black"
+                android:layout_weight="0.9"
+                android:textColor="@color/black"
+                android:onClick="onClick" />
+            <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:textSize="@dimen/textsize_15"
+                android:inputType="text"
+                android:text="thaltej cross"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:textColor="@color/black"
+                android:id="@+id/et_addressline"
+                android:background="@android:color/transparent"/>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:text="@string/city"
+                android:paddingTop="@dimen/margin_bottom_20"                android:textSize="@dimen/login_text_btn"
+                android:layout_height="wrap_content"
+                fontPath="@string/font_heading_black"
+                android:layout_weight="0.9"
+                android:textColor="@color/black"
+                android:onClick="onClick" />
+            <EditText
+                android:text="ahmedabad"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:textSize="@dimen/textsize_15"
+                android:inputType="text"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:textColor="@color/black"
+                android:id="@+id/et_city"
+                android:background="@android:color/transparent"/>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"/>
+            <TextView
+                android:id="@+id/tv_country"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:text="@string/country"
+                android:paddingTop="@dimen/margin_bottom_20"
+                android:textSize="@dimen/login_text_btn"
+                android:layout_height="wrap_content"
+                fontPath="@string/font_heading_black"
+                android:layout_weight="0.9"
+                android:textColor="@color/black"
+                android:onClick="onClick" />
+            <EditText
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:textSize="@dimen/textsize_15"
+                android:inputType="text"
+                android:layout_marginBottom="5dp"
+                android:gravity="bottom"
+                android:textColor="@color/black"
+                android:id="@+id/et_country"
+                android:background="@android:color/transparent"/>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_profile_left"
+                android:layout_marginRight="@dimen/margin_profile_left"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

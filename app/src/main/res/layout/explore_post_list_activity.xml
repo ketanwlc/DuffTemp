@@ -1,0 +1,130 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.9"
+    android:background="@drawable/back_img">
+
+    <LinearLayout
+        android:id="@+id/ll_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_height"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                app:elevation="0dp">
+
+                <include layout="@layout/toolbar_browser_post"/>
+            </android.support.design.widget.AppBarLayout>
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_msg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/red">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/profile"
+                android:scaleType="fitXY"
+                android:layout_margin="20dp"
+                android:id="@+id/imageView" />
+
+
+                <TextView
+                    android:text="@string/explorer_top_feed_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_title" />
+
+
+
+        </LinearLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scrollview_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycle_view"
+                android:paddingBottom="10dp"
+                android:nestedScrollingEnabled="false"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>
+<LinearLayout android:layout_width="match_parent"
+android:layout_height="@dimen/home_bottom_hieght"
+android:gravity="center"
+android:background="@color/white"
+android:orientation="horizontal">
+
+<TextView
+    android:text="@string/log_in"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="@dimen/btn_home_title_textsize"
+    fontPath="@string/font_heading_black"
+    android:onClick="onClick"
+    android:paddingLeft="20dp"
+    android:id="@+id/tv_sign_in"/>
+
+
+<Space android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_weight="0.9"/>
+
+<TextView
+    android:id="@+id/btn_join_now"
+    android:text="@string/sign_up"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="20dp"
+    fontPath="@string/font_heading_black"
+    android:textColor="@color/red"
+    android:onClick="onClick"
+    android:textSize="@dimen/btn_home_title_textsize" />
+
+</LinearLayout>
+
+</LinearLayout>

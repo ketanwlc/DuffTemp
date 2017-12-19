@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:onClick="onClick"
+            android:paddingLeft="20dp"
+            android:id="@+id/tv_cancel"/>
+
+
+        <Space android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:id="@+id/publish"
+            android:text="@string/publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:paddingRight="20dp"
+            fontPath="@string/font_heading_black"
+            android:textColor="@color/red"
+            android:onClick="onClick"
+            android:textSize="@dimen/btn_home_title_textsize_sub" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/toolbar_new"
+        android:gravity="center">
+    <com.joanzapata.iconify.widget.IconTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fontPath="@string/font_heading_black"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:textSize="@dimen/icon_text_size_60"
+        android:text="@string/email_icon"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:id="@+id/icon_email" />
+
+    <me.grantland.widget.AutofitTextView
+        android:text="@string/gate_msg_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_home_title_textsize"
+        fontPath="@string/font_heading_black"
+        android:id="@+id/tv_comple_100"
+        auto_fit:minTextSize="10sp"/>
+
+    <me.grantland.widget.AutofitTextView
+        android:text="@string/gate_msg_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        android:id="@+id/signup_successful"
+        auto_fit:minTextSize="10sp"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/send_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            android:id="@+id/resend_mail"
+            auto_fit:minTextSize="10sp"/>
+
+        </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="@string/duffler"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="0dp"
+            android:lineSpacingExtra="0dp"
+            android:includeFontPadding="false"
+            android:layout_alignParentTop="true"
+            fontPath="@string/font_title_black"
+            android:textColor="@color/white"
+            android:textSize="@dimen/profile_medium_textsize"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:text="@string/tm"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingTop="1dp"
+            android:textSize="@dimen/tm_size"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/textView2"
+            fontPath="@string/font_title_black"
+            android:textColor="@color/white"
+            android:id="@+id/textView4" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:text="@string/world"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="37dp"
+        android:lineSpacingExtra="0dp"
+        android:includeFontPadding="false"
+        android:textColor="@color/red"
+        fontPath="@string/font_title_black"
+        android:padding="0dp"
+        android:scaleY="0.99"
+        android:textSize="@dimen/textsize_15"
+        android:id="@+id/textView3" />
+</FrameLayout>

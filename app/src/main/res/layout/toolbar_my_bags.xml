@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar_post"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetEnd="0dp">
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_back"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_width="@dimen/toolbar_height"
+            android:onClick="onClick"
+            android:gravity="center"
+            android:textSize="@dimen/icon_text_size_default"
+            android:text="@string/back_icon"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:text="@string/my_bags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/btn_home_title_textsize"
+            fontPath="@string/font_title_black"
+            android:textColor="@color/white"
+            android:id="@+id/tv_title" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_plus"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_width="@dimen/toolbar_height"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/icon_text_size_default"
+            android:text="@string/plus_icon"
+            android:textColor="@color/red"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

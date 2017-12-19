@@ -1,0 +1,158 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/toolbar_title_height"
+        android:layout_weight="0.9"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="@dimen/toolbar_height"
+        android:background="@color/white"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@color/gray"
+                    android:scaleType="fitXY"
+                    android:id="@+id/imageView" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:text="@string/at_dufflerman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        fontPath="@string/font_heading_black"
+                        android:textColor="@color/black"
+                        android:id="@+id/tv_title" />
+
+                    <TextView
+                        android:text="@string/desc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:textColor="@color/black"
+                        android:id="@+id/tv_desc" />
+
+                </LinearLayout>
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/icon_cancel"
+                    android:layout_height="40dp"
+                    android:layout_width="wrap_content"
+                    android:gravity="top|right"
+                    fontPath="@string/font_heading_black"
+                    android:textSize="@dimen/icon_text_size_default"
+                    android:text="@string/cancel_icon"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+
+            <android.support.percent.PercentRelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    app:layout_widthPercent="100%"
+                    app:layout_aspectRatio="105%"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@color/gray"
+                    android:scaleType="fitXY"
+                    android:id="@+id/img_big" />
+            </android.support.percent.PercentRelativeLayout>
+            <TextView
+                android:text="Yo check this out! #duffler012345679"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/tv_duffler_id" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/toolbar_color"
+                android:paddingTop="5dp"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@color/gray"
+                    android:scaleType="fitXY"
+                    android:id="@+id/imageView1" />
+
+                <TextView
+                    android:text="@string/cool"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_desc1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:background="@color/toolbar_color"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:src="@color/gray"
+                    android:scaleType="fitXY"
+                    android:id="@+id/imageView2" />
+
+                <TextView
+                    android:text="@string/very_nice_dude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_desc2" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

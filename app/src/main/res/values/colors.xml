@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="toolbar_color">#EBEBEB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_light">#D0D0D0</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="gray_back">#99A2A1</color>
+    <color name="black">#000000</color>
+    <color name="sign_in_btn_color">#0096FF</color>
+    <color name="gray_dark">#919191</color>
+    <color name="dray_much">#797979</color>
+    <color name="red">#D0173E</color>
+    <color name="toolbar_new">#EBF0EF</color>
+    <color name="yellow_toolbar">#FFC357</color>
+    <color name="alpha_gray">#565C5B</color>
+    <color name="dray_guidline">#B9B9B9</color>
+    <color name="green">#008000</color>
+
+</resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <LinearLayout android:layout_height="0dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <include layout="@layout/duffler_title" />
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+
+        <include layout="@layout/duffler_title" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:background="@color/toolbar_new">
+
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/circle_black"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView3" />
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/complete_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/btn_home_title_textsize"
+            fontPath="@string/font_heading_black"
+            android:id="@+id/tv_comple_100"
+            auto_fit:minTextSize="10sp"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/profile_is_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/dray_much"
+            android:textSize="@dimen/btn_home_title_textsize"
+            fontPath="@string/font_heading_black"
+            android:id="@+id/signup_successful"
+            auto_fit:minTextSize="10sp"/>
+
+    </LinearLayout>
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+        <LinearLayout android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@color/white">
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/plus_100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/profile_big_textsize"
+            fontPath="@string/font_heading_black"
+            android:id="@+id/plus_100"
+            auto_fit:minTextSize="10sp"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/reward_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            fontPath="@string/font_heading_black"
+            android:id="@+id/reward_point"
+            auto_fit:minTextSize="10sp"/>
+            </LinearLayout>
+
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tv_go_to_profile"
+            android:text="@string/go_to_my_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|end|right"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            fontPath="@string/font_heading_black"
+            android:onClick="onClick"
+            auto_fit:minTextSize="10sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

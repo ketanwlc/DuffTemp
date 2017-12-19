@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:gravity="center">
+
+        <include layout="@layout/duffler_title" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.55"
+        android:gravity="center"
+        android:background="@color/toolbar_new">
+
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1.0"/>
+        <TextView
+            android:text="@string/login_with_fb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:textColor="@color/white"
+            android:id="@+id/tv_fb_login"
+            android:background="@color/red"/>
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.8"/>
+        <TextView
+            android:text="@string/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            fontPath="@string/font_heading_black"
+            android:gravity="center"
+            android:textColor="@color/gray_dark" />
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.1"/>
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rv_type="doubleRipple"
+            app:rv_centered="false"
+            app:rv_color="@color/red"
+            app:rv_rippleDuration="500">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="@string/email_or_username"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:textSize="@dimen/login_text_btn"
+            android:inputType="textEmailAddress"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:id="@+id/edt_email"
+            android:background="@android:color/transparent"/>
+
+        </android.support.design.widget.TextInputLayout>
+</com.andexert.library.RippleView>
+
+        <View android:layout_height="@dimen/profile_view_line_height"
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"/>
+        <Space android:layout_height="10dp"
+            android:layout_width="match_parent" />
+
+        <com.andexert.library.RippleView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:rv_type="doubleRipple"
+            app:rv_centered="false"
+            app:rv_color="@color/red"
+            app:rv_rippleDuration="500">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:textSize="@dimen/login_text_btn"
+            android:inputType="textPassword"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:id="@+id/edt_pswd"
+            android:background="@android:color/transparent"/>
+
+        </android.support.design.widget.TextInputLayout>
+        </com.andexert.library.RippleView>
+
+        <View android:layout_height="@dimen/profile_view_line_height"
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"/>
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.8"/>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left">
+
+            <TextView
+                android:text="@string/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="@dimen/btn_home_title_textsize_sub"
+                android:onClick="onClick"
+                android:id="@+id/tv_help"/>
+
+
+            <Space android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="0.9"/>
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:text="@string/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/red"
+                android:onClick="onClick"
+                android:textSize="@dimen/btn_home_title_textsize_sub" />
+
+        </LinearLayout>
+
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="0.8"/>
+    </LinearLayout>
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/dont_have_ac_yet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            fontPath="@string/font_heading_black"
+            android:textSize="18sp"
+            auto_fit:minTextSize="10sp"/>
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/dont_have_ac_yet_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            auto_fit:minTextSize="10sp"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:id="@+id/tv_signup"
+            android:text="@string/sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start|left"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:onClick="onClick"
+            android:textColor="@color/red"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            auto_fit:minTextSize="10sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

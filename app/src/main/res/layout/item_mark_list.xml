@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/profile"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="Eiffel tower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textSize="@dimen/btn_home_title_textsize_sub"
+                fontPath="@string/font_heading_black"
+                android:textColor="@color/black"
+                android:id="@+id/tv_title" />
+
+            <TextView
+                android:text="Landmark — Paris, France"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:textColor="@color/black"
+                android:id="@+id/tv_desc" />
+
+        </LinearLayout>
+        <com.joanzapata.iconify.widget.IconTextView android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:text="@string/more_icon"
+            android:textColor="@color/red"
+            android:textSize="@dimen/icon_text_size_default"/>
+
+    </LinearLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="150%"
+            android:src="@drawable/dummy_back_list"
+            android:scaleType="fitXY"
+            android:id="@+id/img_big" />
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>

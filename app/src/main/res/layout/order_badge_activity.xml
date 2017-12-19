@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <LinearLayout    android:layout_height="@dimen/toolbar_height"
+        android:layout_width="match_parent"
+        android:gravity="center">
+    <include layout="@layout/toolbar_profile_setting"/>
+</LinearLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/toolbar_new">
+        <ImageView
+            app:layout_widthPercent="100%"
+            app:layout_marginLeftPercent="8%"
+            app:layout_marginRightPercent="8%"
+            app:layout_marginBottomPercent="6%"
+            app:layout_marginTopPercent="6%"
+            android:layout_marginTop="5dp"
+            app:layout_aspectRatio="125%"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:background="@color/gray"
+            android:id="@+id/imageView3" />
+
+        </android.support.percent.PercentRelativeLayout>
+
+    <me.grantland.widget.AutofitTextView
+        android:id="@+id/tv_order_badge_msg"
+        android:layout_width="match_parent"
+        android:text="@string/order_badges_msg"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        android:maxLines="3"
+        android:layout_height="match_parent"
+        android:textColor="@color/dray_much"
+        android:layout_weight="0.9"
+        android:background="@color/white"
+        android:onClick="onClick" />
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_bottom_hieght"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            android:onClick="onClick"
+            android:paddingLeft="20dp"
+            android:id="@+id/tv_cancel"/>
+
+
+        <Space android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_weight="0.9"/>
+
+        <TextView
+            android:id="@+id/confirm_order"
+            android:text="@string/confirm_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            fontPath="@string/font_heading_black"
+            android:textColor="@color/red"
+            android:onClick="onClick"
+            android:textSize="@dimen/btn_home_title_textsize" />
+
+    </LinearLayout>
+
+</LinearLayout>

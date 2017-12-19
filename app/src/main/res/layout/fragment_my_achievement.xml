@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <TextView
+        android:text="@string/achievment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:textSize="@dimen/btn_home_title_textsize"
+        fontPath="@string/font_title_black"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:id="@+id/tv_title" />
+    <ScrollView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:background="@color/white">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+    <TextView
+        android:text="@string/new_bags_unlock"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        fontPath="@string/font_heading_black"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_sub" />
+
+    <LinearLayout
+        android:id="@+id/ll_new_badge"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:background="@color/toolbar_new">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@color/gray"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/imageView" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="Havana, Cuba"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textSize="@dimen/btn_home_title_textsize_sub"
+                fontPath="@string/font_heading_black"
+                android:textColor="@color/red"
+                android:id="@+id/tv_title1" />
+
+            <TextView
+                android:text="1 week ago — Order your badge!"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:textSize="@dimen/small_text_size"
+                android:textColor="@color/black"
+                android:id="@+id/tv_desc" />
+
+        </LinearLayout>
+        <com.joanzapata.iconify.widget.IconTextView android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:text="@string/right_icon"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/red"
+            android:textSize="@dimen/icon_text_size_default"/>
+
+    </LinearLayout>
+        <View android:layout_height="@dimen/profile_view_line_height"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="@color/gray_light"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/toolbar_new"
+            android:visibility="gone"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:gravity="center">
+            <TextView
+                android:text="@string/level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/textsize_15"
+                fontPath="@string/font_heading_black"
+                android:textColor="@color/dray_much"
+                android:id="@+id/tv_level" />
+
+            <TextView
+                android:text="@string/explorer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                fontPath="@string/font_heading_black"
+                android:textSize="@dimen/textsize_15"
+                android:textColor="@color/black"
+                android:id="@+id/tv_explorer" />
+            </LinearLayout>
+
+        <FrameLayout android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@color/toolbar_new"
+            android:visibility="gone"
+            android:paddingBottom="5dp">
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_vertical"
+            android:thumb="@drawable/thumb_size"
+            android:minHeight="14dip"
+            android:maxHeight="14dip"
+            android:progressDrawable="@drawable/seekbar_progress_main" />
+            <TextView
+                android:text="0"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/small_text_size"
+                fontPath="@string/font_heading_black"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:id="@+id/tv_progress" />
+</FrameLayout>
+        <View android:layout_height="@dimen/profile_view_line_height"
+            android:layout_width="match_parent"
+            android:background="@color/gray_light"/>
+        <TextView
+            android:text="@string/badges"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:textSize="@dimen/textsize_15"
+            fontPath="@string/font_heading_black"
+            android:textColor="@color/dray_much"
+            android:id="@+id/tv_level" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View android:layout_height="1dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:background="@color/dray_much"/>
+
+        <TextView
+            android:text="17.500"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/profile_big_textsize"
+            android:visibility="gone"
+            android:layout_marginBottom="-5dp"
+            android:textColor="@color/black"
+            android:id="@+id/tv_total_count" />
+
+        <TextView
+            android:text="@string/reward_points"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:visibility="gone"
+            android:textSize="@dimen/title_sub_textsize"
+            android:layout_marginTop="-5dp"
+            android:textColor="@color/black"
+            android:id="@+id/tv_achieved" />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

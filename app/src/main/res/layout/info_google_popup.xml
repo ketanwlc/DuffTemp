@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/linear_map_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/black_border">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/img_map_info"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="fitXY"
+                android:src="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp">
+
+                <TextView android:id="@+id/tv_name_map_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="Eiffel tower"
+                    fontPath="@string/font_heading_black"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"/>
+
+                <TextView android:id="@+id/tv_sub_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:text="Landmark — Paris, France"
+                    android:textSize="@dimen/small_text_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center">
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/icon_back"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:onClick="onClick"
+                    android:gravity="center"
+                    android:textSize="@dimen/icon_text_size_arrow"
+                    android:textColor="@color/red"
+                    android:background="@drawable/pin_red"/>
+                <TextView
+                    android:text="@string/pinned_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/tab_label"
+                    fontPath="@string/font_heading_black"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                    android:id="@+id/tv_descp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    
+    <View android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="@color/gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="10dp">
+    <TextView android:id="@+id/tv_lat_lng"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:text="48.8566° N, 2.3522° E"
+        android:textSize="@dimen/small_text_size"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center">
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icon_start_back"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:onClick="onClick"
+                android:gravity="center"
+                android:textSize="@dimen/icon_text_size_arrow"
+
+                android:background="@drawable/star_black"/>
+            <TextView
+                android:text="LEVEL 1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/tab_label"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:id="@+id/tv_level" />
+        </LinearLayout>
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_more"
+            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:onClick="onClick"
+            android:gravity="center"
+            android:text="@string/more_icon"
+            android:textSize="@dimen/icon_text_size_arrow"
+            android:textColor="@color/red" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="-2.5dp"
+        android:background="@drawable/downarrow10"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible" />
+
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="▼"
+        android:textSize="50sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-20dp"/>-->
+</LinearLayout>

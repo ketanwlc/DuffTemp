@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <FrameLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/yr_top_location_ever"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_marginBottom="13dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/profile_medium_textsize"
+            fontPath="@string/font_title_black" />
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/completed_pc_60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            fontPath="@string/font_title_black"
+            auto_fit:minTextSize="10sp"/>
+
+    </FrameLayout>
+    <ScrollView android:layout_height="0dp"
+        android:fillViewport="true"
+        android:layout_weight="0.85"
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_new"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+           <!-- <me.grantland.widget.AutofitTextView
+                android:text="@string/completed_pc_60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/gray_dark"
+                android:textSize="16sp"
+                auto_fit:minTextSize="10sp"/>
+            <me.grantland.widget.AutofitTextView
+                android:text="@string/yr_top_location_ever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:layout_marginBottom="15dp"
+                fontPath="@string/font_heading_black"
+                auto_fit:minTextSize="10sp"/>-->
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left"
+                android:layout_marginTop="@dimen/margin_bottom_20">
+                <me.grantland.widget.AutofitTextView
+                    android:text="1"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"
+                    fontPath="@string/font_heading_black"
+                    auto_fit:minTextSize="10sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_btn_height"
+                android:textSize="@dimen/btn_home_title_textsize_sub"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:paddingBottom="5dp"
+                android:layout_gravity="center"
+                android:inputType="text"
+                android:gravity="center_vertical"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:id="@+id/et_location1"
+                android:background="@android:color/transparent"/>
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/icon_setting"
+                    android:layout_height="@dimen/profile_view_height"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:textSize="@dimen/icon_text_size_default"
+                    android:text="@string/map_pin_icon"
+                    android:textColor="@color/red"/>
+
+            </FrameLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left"/>
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left">
+                <me.grantland.widget.AutofitTextView
+                    android:text="2"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"
+                    fontPath="@string/font_heading_black"
+                    auto_fit:minTextSize="10sp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_view_height"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:id="@+id/et_location2"
+                    android:background="@android:color/transparent"/>
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:textSize="@dimen/icon_text_size_default"
+                    android:text="@string/map_pin_icon"
+                    android:textColor="@color/red"/>
+
+            </FrameLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left"/>
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left">
+                <me.grantland.widget.AutofitTextView
+                    android:text="3"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"
+                    fontPath="@string/font_heading_black"
+                    auto_fit:minTextSize="10sp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_view_height"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:id="@+id/et_location3"
+                    android:background="@android:color/transparent"/>
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:textSize="@dimen/icon_text_size_default"
+                    android:text="@string/map_pin_icon"
+                    android:textColor="@color/red"/>
+
+            </FrameLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left"/>
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left">
+                <me.grantland.widget.AutofitTextView
+                    android:text="4"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"
+                    fontPath="@string/font_heading_black"
+                    auto_fit:minTextSize="10sp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_view_height"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:id="@+id/et_location4"
+                    android:background="@android:color/transparent"/>
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:textSize="@dimen/icon_text_size_default"
+                    android:text="@string/map_pin_icon"
+                    android:textColor="@color/red"/>
+
+            </FrameLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left"/>
+            <FrameLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left">
+                <me.grantland.widget.AutofitTextView
+                    android:text="5"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="left"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"
+                    fontPath="@string/font_heading_black"
+                    auto_fit:minTextSize="10sp"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/profile_view_height"
+                    android:textSize="@dimen/btn_home_title_textsize_sub"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:paddingBottom="5dp"
+                    android:layout_gravity="center"
+                    android:inputType="text"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/black"
+                    android:textColor="@color/black"
+                    android:id="@+id/et_location5"
+                    android:background="@android:color/transparent"/>
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="50dp"
+                    android:layout_width="50dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:textSize="@dimen/icon_text_size_default"
+                    android:text="@string/map_pin_icon"
+                    android:textColor="@color/red"/>
+
+            </FrameLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray"
+                android:layout_marginLeft="@dimen/margin_login_left"
+                android:layout_marginRight="@dimen/margin_login_left"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+    <me.grantland.widget.AutofitTextView
+        android:text="@string/top_location_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:textSize="16sp"
+        auto_fit:minTextSize="10sp"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_bottom_hieght"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            android:onClick="onClick"
+            android:paddingLeft="10dp"
+            android:id="@+id/tv_cancel"/>
+
+        <TextView
+            android:id="@+id/rescan"
+            android:text="@string/rescan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="invisible"
+            android:layout_weight="0.9"
+            android:textColor="@color/red"
+            android:onClick="onClick"
+            android:textSize="@dimen/btn_home_title_textsize_sub" />
+        <TextView
+            android:id="@+id/save"
+            android:text="@string/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            fontPath="@string/font_heading_black"
+            android:textColor="@color/red"
+            android:onClick="onClick"
+            android:textSize="@dimen/btn_home_title_textsize_sub" />
+
+    </LinearLayout>
+        </LinearLayout>
+
+</LinearLayout>

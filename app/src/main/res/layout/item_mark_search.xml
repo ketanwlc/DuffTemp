@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/profile"
+        android:scaleType="fitXY"
+        android:id="@+id/imageView" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:text="Eiffel tower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            fontPath="@string/font_heading_black"
+            android:textColor="@color/black"
+            android:id="@+id/tv_title" />
+
+        <TextView
+            android:text="Landmark — Paris, France"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:textColor="@color/black"
+            android:id="@+id/tv_desc" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_back"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:onClick="onClick"
+            android:gravity="center"
+            android:textSize="@dimen/icon_text_size_arrow"
+            android:textColor="@color/black"
+            android:background="@drawable/pin"/>
+        <TextView
+            android:text="@string/pinned_cap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/tab_label"
+            fontPath="@string/font_heading_black"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:id="@+id/tv_descp" />
+        </LinearLayout>
+</LinearLayout>

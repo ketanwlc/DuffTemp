@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@color/gray"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:text="@string/duffler1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                fontPath="@string/font_heading_black"
+                android:textColor="@color/black"
+                android:id="@+id/tv_title" />
+
+            <TextView
+                android:text=""
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:id="@+id/tv_bag_value" />
+
+        </LinearLayout>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:textSize="@dimen/icon_text_size_default"
+            android:text="@string/right_icon"
+            android:textColor="@color/red"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center">
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_bluetooth"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:textSize="@dimen/icon_text_size_default"
+            android:text="@string/bluetooth_icon"
+            android:textColor="@color/sign_in_btn_color"/>
+
+        <TextView
+            android:text="@string/beacon_scanning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:textColor="@color/black"
+            android:id="@+id/tv_beacon_in_range" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:id="@+id/icon_bell"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:textSize="@dimen/icon_text_size_default"
+            android:text="@string/bell_icon"
+            android:textColor="@color/red"/>
+        </LinearLayout>
+
+</LinearLayout>

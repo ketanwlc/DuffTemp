@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:gravity="center">
+
+        <include layout="@layout/duffler_title" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.85"
+        android:gravity="center"
+        android:background="@color/toolbar_new">
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1.4"/>
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/sign_up_top_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start|left"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            auto_fit:minTextSize="10sp"/>
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/login_with_fb"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:id="@+id/tv_fb_login"
+            android:background="@color/red"/>
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:text="@string/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            fontPath="@string/font_heading_black"
+            android:gravity="center"
+            android:textColor="@color/gray_dark" />
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/sign_up_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start|left"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            auto_fit:minTextSize="10sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="@string/email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:gravity="center_vertical"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/login_text_btn"
+            android:textColor="@color/black"
+            android:id="@+id/edt_email"
+            android:background="@android:color/transparent"/>
+        </android.support.design.widget.TextInputLayout>
+        <View android:layout_height="@dimen/profile_view_line_height"
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"/>
+        <Space android:layout_height="10dp"
+            android:layout_width="match_parent" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <EditText
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_btn_height"
+            android:inputType="textPassword"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/login_text_btn"
+            android:textColor="@color/black"
+            android:id="@+id/edt_pswd"
+            android:background="@android:color/transparent"/>
+        </android.support.design.widget.TextInputLayout>
+        <View android:layout_height="@dimen/profile_view_line_height"
+            android:layout_width="match_parent"
+            android:background="@color/gray"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left"/>
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/margin_login_left"
+            android:layout_marginRight="@dimen/margin_login_left">
+
+            <TextView
+                android:text="@string/help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textSize="@dimen/btn_home_title_textsize_sub"
+                android:onClick="onClick"
+                android:id="@+id/tv_help"/>
+
+
+            <Space android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_weight="0.9"/>
+
+            <TextView
+                android:id="@+id/tv_signup"
+                android:text="@string/sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontPath="@string/font_heading_black"
+                android:textColor="@color/red"
+                android:onClick="onClick"
+                android:textSize="@dimen/btn_home_title_textsize_sub" />
+
+        </LinearLayout>
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1.2"/>
+        <View android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/agree_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            auto_fit:minTextSize="10sp"/>
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/term_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/gray_dark"
+            android:textSize="14sp"
+            auto_fit:minTextSize="10sp"/>
+
+
+    </LinearLayout>
+        <View android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+        </LinearLayout>
+
+</LinearLayout>

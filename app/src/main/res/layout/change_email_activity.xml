@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            android:onClick="onClick"
+            android:paddingLeft="20dp"
+            android:id="@+id/tv_cancel"/>
+
+
+        <TextView
+            android:text="@string/update_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            fontPath="@string/font_title_black"
+            android:layout_weight="0.9"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btn_home_title_textsize"
+            android:onClick="onClick"
+            android:id="@+id/tv_my_details"/>
+
+        <TextView
+            android:id="@+id/save"
+            android:text="@string/save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            fontPath="@string/font_heading_black"
+            android:textColor="@color/red"
+            android:onClick="onClick"
+            android:textSize="@dimen/btn_home_title_textsize_sub" />
+
+    </LinearLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+    android:layout_below="@+id/ll_header"
+    android:background="@color/toolbar_new">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_profile_left"
+        android:layout_marginRight="@dimen/margin_profile_left"
+        android:text="@string/current_email"
+        android:textSize="@dimen/login_text_btn"
+        android:layout_height="wrap_content"
+        fontPath="@string/font_heading_black"
+        android:textColor="@color/black"
+        android:onClick="onClick" />
+    <EditText
+        android:text="dufflerman@gmail.com"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_marginLeft="@dimen/margin_profile_left"
+        android:layout_marginRight="@dimen/margin_profile_left"
+        android:textSize="@dimen/textsize_15"
+        android:inputType="text"
+        android:enabled="false"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:id="@+id/et_email"
+        android:background="@android:color/transparent"/>
+    <View android:layout_height="@dimen/profile_view_line_height"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_marginLeft="@dimen/margin_profile_left"
+        android:layout_marginRight="@dimen/margin_profile_left"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/margin_profile_left"
+        android:layout_marginRight="@dimen/margin_profile_left"
+        android:text="@string/new_email"
+        android:textSize="@dimen/login_text_btn"
+        android:paddingTop="30dp"
+        android:layout_height="wrap_content"
+        fontPath="@string/font_heading_black"
+        android:textColor="@color/black"
+        android:onClick="onClick" />
+    <EditText
+        android:hint="@string/new_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_btn_height"
+        android:layout_marginLeft="@dimen/margin_profile_left"
+        android:layout_marginRight="@dimen/margin_profile_left"
+        android:textSize="@dimen/textsize_15"
+        android:inputType="text"
+        android:gravity="bottom"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:id="@+id/et_new_email"
+        android:background="@android:color/transparent"/>
+    <View android:layout_height="@dimen/profile_view_line_height"
+        android:layout_width="match_parent"
+        android:background="@color/gray"
+        android:layout_marginLeft="@dimen/margin_profile_left"
+        android:layout_marginRight="@dimen/margin_profile_left"/>
+
+</LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/profile"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:text="@string/at_dufflerman"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:textSize="@dimen/btn_home_title_textsize_sub"
+                fontPath="@string/font_heading_black"
+                android:textColor="@color/black"
+                android:id="@+id/tv_title" />
+
+            <TextView
+                android:text="@string/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:id="@+id/tv_desc" />
+
+        </LinearLayout>
+        <com.joanzapata.iconify.widget.IconTextView
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:gravity="center"
+            android:textSize="@dimen/icon_text_size_default"
+            android:text="@string/setting_icon"
+            android:textColor="@color/red"/>
+
+
+    </LinearLayout>
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            app:layout_widthPercent="100%"
+            app:layout_aspectRatio="150%"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/dummy_back_list"
+            android:scaleType="fitXY"
+            android:id="@+id/img_big" />
+
+    </android.support.percent.PercentRelativeLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <TextView
+            android:text="@string/post_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:paddingLeft="10dp"
+            android:id="@+id/tv_duffler_msg" />
+        <TextView
+            android:text="#duffler012345679"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dray_much"
+            android:paddingLeft="10dp"
+            android:id="@+id/tv_duffler_id" />
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/just_now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dray_much"
+        android:textSize="@dimen/small_text_size_9"
+        android:paddingLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/tv_time" />
+
+</LinearLayout>

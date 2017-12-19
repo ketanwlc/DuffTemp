@@ -1,0 +1,412 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/toolbar_new"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_img">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    app:elevation="0dp">
+
+                    <include layout="@layout/toolbar_profile_setting"/>
+                </android.support.design.widget.AppBarLayout>
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_my_details"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:gravity="center"
+                android:background="@color/white">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:src="@drawable/user_black"
+                    android:scaleType="fitXY"
+                    android:id="@+id/img_profile" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp">
+
+                    <TextView
+                        android:text="@string/my_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:textSize="@dimen/btn_home_title_textsize_sub"
+                        fontPath="@string/font_heading_black"
+                        android:textColor="@color/black"
+                        android:id="@+id/tv_title" />
+
+                    <TextView
+                        android:text="@string/duffelerman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:textColor="@color/black"
+                        android:id="@+id/tv_username" />
+
+                </LinearLayout>
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:id="@+id/icon_switch"
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical|right"
+                    android:tag="list"
+                    android:textSize="@dimen/icon_text_size_arrow"
+                    android:text="@string/right_icon"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/toolbar_new"
+            android:gravity="center">
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+            <LinearLayout
+                android:id="@+id/ll_pswd"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_hieght_profile_setting"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+
+                    <TextView
+                        android:text="@string/change_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:gravity="bottom"
+                        android:textColor="@color/black"
+                        android:id="@+id/tv_change_pswd" />
+
+
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/icon_text_size_arrow"
+                    android:text="@string/right_icon"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_change_pswd"
+                android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+            <LinearLayout
+                android:id="@+id/ll_change_email"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_hieght_profile_setting"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+
+                <TextView
+                    android:text="@string/change_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_change_email" />
+
+
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/icon_text_size_arrow"
+                    android:text="@string/right_icon"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+            <View
+                android:id="@+id/view_change_mail"
+                android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+            <LinearLayout
+                android:id="@+id/ll_location"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_hieght_profile_setting"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+
+                <TextView
+                    android:text="@string/top_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_top_location" />
+
+
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/icon_text_size_arrow"
+                    android:text="@string/right_icon"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_hieght_profile_setting"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:visibility="gone"
+                android:background="@color/white"
+                android:gravity="center">
+
+
+                <TextView
+                    android:text="@string/traveler_persionality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_traveler_persionality" />
+
+
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/icon_text_size_arrow"
+                    android:text="@string/right_icon"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_hieght_profile_setting"
+                android:visibility="gone"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+
+                <TextView
+                    android:text="@string/social_media"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_social_media" />
+
+
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/icon_text_size_arrow"
+                    android:text="@string/right_icon"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"
+                android:visibility="gone"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_alerm_mode"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_hieght_profile_setting"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+
+                <TextView
+                    android:text="@string/alerm_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_alerm_mode" />
+
+
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/icon_text_size_arrow"
+                    android:text="@string/right_icon"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+            <LinearLayout
+                android:id="@+id/ll_privacy"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_hieght_profile_setting"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+
+                <TextView
+                    android:text="@string/privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="bottom"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_privacy" />
+
+
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/icon_text_size_arrow"
+                    android:text="@string/right_icon"
+                    android:textColor="@color/red"/>
+
+            </LinearLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/btn_hieght_profile_setting"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:background="@color/white"
+                android:gravity="center">
+
+
+                <TextView
+                    android:text="@string/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:gravity="bottom"
+                    fontPath="@string/font_heading_black"
+                    android:textColor="@color/black"
+                    android:id="@+id/tv_logout" />
+
+
+
+                <com.joanzapata.iconify.widget.IconTextView
+                    android:layout_height="40dp"
+                    android:layout_width="40dp"
+                    android:visibility="invisible"
+                    android:gravity="center_vertical|right"
+                    android:textSize="@dimen/icon_text_size_default"
+                    android:text="@string/right_icon" />
+
+            </LinearLayout>
+            <View android:layout_height="@dimen/profile_view_line_height"
+                android:layout_width="match_parent"
+                android:background="@color/gray_light"/>
+            <TextView
+                android:text="App version 1.0.0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp"
+                android:background="@color/toolbar_new"
+                android:gravity="center"
+                android:textColor="@color/gray_dark"
+                android:id="@+id/tv_version" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <include layout="@layout/toolbar_profile_setting"/>
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/toolbar_new">
+    <LinearLayout
+        android:id="@+id/frame_photo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:onClick="onClick">
+
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:src="@drawable/scanner"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView3" />
+
+        <TextView
+            android:text="@string/scannig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            fontPath="@string/font_heading_black"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/tv_add_photo"/>
+
+    </LinearLayout>
+
+        <TextView
+            android:text="@string/found_device_within_range"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textColor="@color/dray_much"
+            android:id="@+id/tv_beacon_in_range" />
+
+
+    <View android:layout_height="@dimen/profile_view_line_height"
+        android:layout_width="match_parent"
+        android:background="@color/gray"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:paddingBottom="10dp"
+            android:layout_weight="0.9"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+    <View android:layout_height="@dimen/profile_view_line_height"
+        android:layout_width="match_parent"
+        android:background="@color/gray"/>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@color/toolbar_new"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@color/sign_in_btn_color">
+
+            <com.joanzapata.iconify.widget.IconTextView
+                android:id="@+id/icon_bluetooth"
+                android:layout_height="60dp"
+                android:layout_width="60dp"
+                android:gravity="center"
+                android:textSize="@dimen/profile_big_textsize"
+                android:text="@string/bluetooth_icon"
+                android:textColor="@color/white"/>
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+            <TextView
+                android:text="@string/bluetooth_massage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/white"
+                android:id="@+id/tv_bluetooth_massage" />
+
+                <TextView
+                    android:text="@string/bluetooth_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp"
+                    android:layout_marginLeft="10dp"
+
+                    android:textColor="@color/white"
+                    android:id="@+id/tv_bluetooth_setting" />
+
+               </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

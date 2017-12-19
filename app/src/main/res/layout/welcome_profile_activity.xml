@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+    <FrameLayout android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.15"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"
+        android:gravity="center">
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="13dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/profile_medium_textsize"
+            fontPath="@string/font_title_black" />
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/completed_pc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            fontPath="@string/font_title_black"
+            auto_fit:minTextSize="10sp"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:background="@color/toolbar_new">
+
+        <!--<Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>-->
+
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/profile"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:id="@+id/imageView3" />
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/follow_duffler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            fontPath="@string/font_heading_black"
+            auto_fit:minTextSize="10sp"/>
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/reward_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/gray_dark"
+            android:textSize="18sp"
+            auto_fit:minTextSize="10sp"/>
+        <Space android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_weight="0.4">
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_weight="0.9"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/ready_to_explore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            fontPath="@string/font_heading_black"
+            android:textSize="19sp"
+            android:id="@+id/tv_ready_to_explore"
+            android:layout_marginBottom="10dp"
+            auto_fit:minTextSize="10sp"/>
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/signup_success_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/success_screen_msg"
+            auto_fit:minTextSize="10sp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tv_skip"
+                android:text="@string/tour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.78"
+                android:gravity="center_vertical|start"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/red"
+                android:textSize="19sp"
+                android:onClick="onClick"
+                auto_fit:minTextSize="10sp"/>
+
+            <me.grantland.widget.AutofitTextView
+                android:id="@+id/tv_complete_yr_profile"
+                android:text="@string/complete_yr_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.22"
+                android:gravity="center_vertical|end|right"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/red"
+                android:textSize="19sp"
+                fontPath="@string/font_heading_black"
+                android:onClick="onClick"
+                auto_fit:minTextSize="10sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

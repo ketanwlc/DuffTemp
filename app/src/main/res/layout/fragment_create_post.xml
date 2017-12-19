@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img">
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:text="@string/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/tv_cancel"/>
+
+
+        <Space android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_publish"
+            android:text="@string/publish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            fontPath="@string/font_heading_black"
+            android:textColor="@color/red"
+            android:textSize="@dimen/btn_home_title_textsize_sub" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:background="@color/toolbar_new">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@color/gray"
+            android:scaleType="fitXY"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/imageView" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:text="Eiffel tower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textSize="@dimen/textsize_15"
+                fontPath="@string/font_heading_black"
+                android:textColor="@color/black"
+                android:id="@+id/tv_title" />
+
+            <TextView
+                android:text="48.8566° N, 2.3522° E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:textColor="@color/black"
+                android:id="@+id/tv_desc" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+    <EditText
+        android:hint="@string/add_post_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:textColor="@color/black"
+        android:id="@+id/tv_post_msg" />
+
+    <FrameLayout
+        android:id="@+id/container_with_dotted_border"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/dashed_border">
+
+        <TextView
+            android:text="@string/add_photos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/red"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            android:id="@+id/tv_add_photo"/>
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:id="@+id/imageView3" />
+
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/ll_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:orientation="horizontal">
+    <TextView
+        android:text="@string/also_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:layout_margin="20dp"
+        android:textSize="@dimen/btn_home_title_textsize_sub"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:id="@+id/tv_also_post" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:text="@string/twitter_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            android:gravity="center"
+            android:textColor="@color/gray_dark"
+            android:id="@+id/icon_twitter" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:text="@string/fb_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            android:gravity="center"
+            android:textColor="@color/gray_dark"
+            android:id="@+id/icon_fb" />
+        <com.joanzapata.iconify.widget.IconTextView
+            android:text="@string/ig"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            android:gravity="center"
+            android:textColor="@color/gray_dark"
+            android:id="@+id/icon_insta" />
+
+        <com.joanzapata.iconify.widget.IconTextView
+            android:text="@string/sc"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:textSize="@dimen/btn_home_title_textsize_sub"
+            android:gravity="center"
+            android:textColor="@color/gray_dark"
+            android:id="@+id/icon_sc" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view_create_post"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never"/>
+
+        </LinearLayout>
+
+</LinearLayout>

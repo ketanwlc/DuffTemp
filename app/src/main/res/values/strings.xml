@@ -1,0 +1,240 @@
+<resources>
+
+    <string name="facebook_app_id">536479940077474</string>
+    <string name="font_heading_black">font/Montserrat-SemiBold.otf</string>
+    <string name="font_title_black">font/Cabin-SemiBold-TTF.ttf</string>
+    <string name="app_name">Duffler</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="home_pager_page1_title">CARRYING YOUR PERSONALITY</string>
+    <string name="home_pager_page1_desc">DUFFLER<font size="7"><sup>TM</sup></font> is not just an amazingly well-made bag. It becomes an extension of your personality and your preferred companion during unforgettable experiences.</string>
+    <string name="site_name">www.duffler.com</string>
+    <string name="home_pager_page2_title">EVERY DUFFLER<font size="10"><sup>TM</sup></font> TELLS A STORY</string>
+    <string name="home_pager_page2_desc">Every bag we make is branded with a personal ID number, so you can identify your DUFFLER<font size="7"><sup>TM</sup></font> bag at all times. You could even use it as a hashtag on social media so people can follow you on your next adventure.</string>
+    <string name="home_pager_page3_title">EARN BADGES AS YOU TRAVEL</string>
+    <string name="home_pager_page3_desc">Using the DUFFLER<font size="7"><sup>TM</sup></font> World app, you
+        earn leather badges to personalize
+        your bag. Set out on your adventure
+        and the app will tell you when you
+        have completed a challenge. We will
+        send your badge by mail so you can
+        place it on the outside of your bag.</string>
+    <string name="home_pager_page4_title">ACHIEVE AND UNLOCK</string>
+    <string name="home_pager_page4_desc">The DUFFLER<font size="7"><sup>TM</sup></font> World app inspires
+        and motivates. It challenges you to
+        explore and achieve. Besides earning
+        badges, you get access to our
+        exclusive guides, rewards and events.</string>
+    <string name="home_pager_page5_title">DUFFLER<font size="10"><sup>TM</sup></font> GETS SMART</string>
+    <string name="home_pager_page5_desc">We teamed up with Estimote to turn
+        your DUFFLER<font size="7"><sup>TM</sup></font> into a smart bag. The
+        beacon allows you to receive an alert
+        you when your bag moves or goes out
+        of range, and can even sound an alarm!</string>
+    <string name="duffler">D U F F L E R</string>
+    <string name="duffler1">DUFFLER</string>
+    <string name="tm">TM</string>
+    <string name="world">W O R L D</string>
+    <string name="explore">Explore</string>
+    <string name="login_with_fb">Log in with Facebook</string>
+    <string name="email_or_username">Email or username</string>
+    <string name="or">OR</string>
+    <string name="help">Help</string>
+    <string name="login">Login</string>
+    <string name="dont_have_ac_yet">Don\'t have an account yet?</string>
+    <string name="dont_have_ac_yet_msg">Make sure to complete the sign up process first!</string>
+    <string name="sign_up_text">Sign up using your email address and a password of your choice:</string>
+    <string name="sign_up_top_msg">Use Facebook for quick and easy sign up:</string>
+    <string name="agree_msg">By signing up, you agree to our</string>
+    <string name="term_msg"><u><![CDATA[Terms & Privacy policy]]></u></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="success_screen_msg">We have just sent a message to\nemail@email.com. Please make\nsure to follow the instructions in\nthe email to confirm your\naccount, and you\'re all set!</string>
+    <string name="go_to_my_profile">Go to my profile</string>
+    <string name="signup_successful">Signup\nsuccessful!</string>
+    <string name="ready_to_explore">Ready to explore?</string>
+    <string name="signup_success_msg">Feel free to further complete your\nprofile with more details. It might be\nuseful later on! Or you can just skip\nand go straight to your profile.</string>
+    <string name="complete_yr_profile">Complete your profile</string>
+    <string name="skip">Skip</string>
+    <string name="reward_msg">Receive 1000 reward points\nby completing your profile</string>
+    <string name="follow_duffler">Welcome,\nfellow DUFFLER!</string>
+    <string name="completed_pc">10% complete</string>
+    <string name="username">Username</string>
+    <string name="fullname">Full name</string>
+    <string name="streetname">Street name</string>
+    <string name="adressline">2nd address line</string>
+    <string name="city">City / town</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="Save">Save</string>
+    <string name="take_photo">Take photo</string>
+    <string name="from_gallary">Choose from gallery</string>
+    <string name="from_file_explorer">Choose from file explorer</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="your_detail">Your details</string>
+    <string name="add_photo">Add photo</string>
+    <string name="add_photos">Add photos</string>
+    <string name="search_icon">{fa-search}</string>
+    <string name="map_icon">{fa-map}</string>
+    <string name="list_icon">{fa-list-ul}</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="icon_map_marker">{fa-map-marker}</string>
+    <string name="at_dufflerman">\@dufflerman</string>
+    <string name="desc">Buenos Aires, Argentina</string>
+    <string name="more_icon">{fa-ellipsis-h}</string>
+    <string name="publish">Publish</string>
+    <string name="add_post_msg">What have you been up to, fellow DUFFLER<font size="7"><sup>TM</sup></font>?</string>
+    <string name="also_post">Also post to:</string>
+    <string name="fb_icon">{fa-facebook-square}</string>
+    <string name="twitter_icon">{fa-twitter}</string>
+    <string name="ig">IG</string>
+    <string name="sc">SC</string>
+    <string name="setting_icon">{fa-gear}</string>
+    <string name="achieved">Achieved</string>
+    <string name="pinned">Pinned</string>
+    <string name="pinned_cap">PINNED</string>
+    <string name="posts">P O S T S</string>
+    <string name="badges">B A D G E S</string>
+    <string name="reward_points">R E W A R D \u0020 P O I N T S</string>
+    <string name="bags">B A G S</string>
+    <string name="back_icon">{fa-chevron-left}</string>
+    <string name="settings">Settings</string>
+    <string name="my_detail">My details</string>
+    <string name="duffelerman">\@dufflerman</string>
+    <string name="right_icon">{fa-chevron-right}</string>
+    <string name="change_password">Change password</string>
+    <string name="top_location">Top locations</string>
+    <string name="traveler_persionality">Traveler personality</string>
+    <string name="social_media">Social media accounts</string>
+    <string name="privacy">Privacy</string>
+    <string name="logout">Log out</string>
+    <string name="my_details">My details</string>
+    <string name="change_photo">Change\nphoto</string>
+    <string name="detail_successfully_added">Details succesfully added!</string>
+    <string name="completed_pc_30">30% complete</string>
+    <string name="scan_yr_buffler_id">Scan your DUFFLER<font size="7"><sup>TM</sup></font> ID#</string>
+    <string name="add_bag_msg">You can find your ID# embroidered on your bag. It looks like this:</string>
+    <string name="previous">Previous</string>
+    <string name="rescan">Rescan</string>
+    <string name="cameraview">Camera view</string>
+    <string name="bag_successfully_added">Bag successfully added!</string>
+    <string name="completed_pc_60">60% complete</string>
+    <string name="yr_top_location_ever">Your top locations ever</string>
+    <string name="map_pin_icon">{fa-map-pin}</string>
+    <string name="top_location_text">Explain here why we are asking this information and how it will be used.</string>
+    <string name="top_location_added">Top locations succesfully added!</string>
+    <string name="completed_pc_80">80% complete</string>
+    <string name="yr_traveler_personality">Your traveler personality</string>
+    <string name="jungle">Jungle</string>
+    <string name="city_">City</string>
+    <string name="active">Active</string>
+    <string name="relax">Relax</string>
+    <string name="street_food">Street food</string>
+    <string name="fining_dinner">Fine dining</string>
+    <string name="alone">Alone</string>
+    <string name="grounp">Group</string>
+    <string name="travel_personality_success_msg">Traveler personality succesfully added!</string>
+    <string name="complete_100">100% complete</string>
+    <string name="profile_is_complete">Your profile is complete!</string>
+    <string name="plus_100">+100</string>
+    <string name="reward_point">reward points</string>
+    <string name="mark">Mark</string>
+    <string name="pinned_only">Pinned only</string>
+    <string name="show_marker">Show landmarks</string>
+    <string name="show_activities">Show activities</string>
+    <string name="Show_cities">Show cities</string>
+    <string name="keyword_username">keyword, username</string>
+    <string name="follow_duffler_">FELLOW DUFFLERS</string>
+    <string name="treading">TRENDING</string>
+    <string name="keyword_username_category">name, location, category</string>
+    <string name="settings_mark">Search marks</string>
+    <string name="my_posts">My posts</string>
+    <string name="my_bags">My bags</string>
+    <string name="plus_icon">{fa-plus}</string>
+    <string name="bell_icon">{fa-bell}</string>
+    <string name="bluetooth_icon">{fa-bluetooth-b}</string>
+    <string name="no_beacon_connected">No beacon connected</string>
+    <string name="beacon_in_range">Beacon in range</string>
+    <string name="bag_name">Bag name</string>
+    <string name="beacon_alert">Beacon alarm</string>
+    <string name="beacon_setting">Beacon settings</string>
+    <string name="add_beacon">Add beacon</string>
+    <string name="new_bags_unlock">New badge unlocked!</string>
+    <string name="achievment">Achievements</string>
+    <string name="level">Level</string>
+    <string name="explorer">Explorer</string>
+    <string name="congratulation">Congratulations!</string>
+    <string name="badge_detail_msg">You have unlocked the Cuba badge. Order it and pin it to your bag!</string>
+    <string name="order_badges">Order badge</string>
+    <string name="date_achived">Achieved on Friday June 9, 2017</string>
+    <string name="view_post">View post</string>
+    <string name="confirm_order">Confirm order</string>
+    <string name="order_badges_msg"><font color='black'>You are about to order the <b>Cuba</b> badge.</font> This will cost you 1500 from your 17.500 reward points.</string>
+    <string name="order_completed">Order complete!</string>
+    <string name="check_mail_for_order_follow">Check your email to\nfollow up on your order.</string>
+    <string name="explore_msg">Discover what\nfellow DUFFLERs\nare up to!</string>
+    <string name="explorer_top_feed_msg">These are posts of active travelers on the go. Join our world and become a DUFFLER yourself!</string>
+    <string name="cancel_icon">{fa-remove}</string>
+    <string name="cool">Cool!</string>
+    <string name="very_nice_dude">Very nice dude!</string>
+    <string name="scannig">Scanning...</string>
+    <string name="found_device_within_range">FOUND DEVICES WITHIN RANGE</string>
+    <string name="bluetooth_massage">Make sure Bluetooth is enabled on this phone.</string>
+    <string name="bluetooth_setting"><u>Bluetooth settings</u></string>
+    <string name="estimote_beacon">Estimote<font size="7"><sup>TM</sup></font> Beacon</string>
+    <string name="pair">Pair</string>
+    <string name="enable_beacon">Enable beacon</string>
+    <string name="alarm">Alarm</string>
+    <string name="high_alarm_sensivity">High alarm sensitivity</string>
+    <string name="unpair">Unpair</string>
+    <string name="pinned_mark">PIN MARK</string>
+    <string name="dummy2">The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel</string>
+    <string name="email_icon">{fa-envelope-o}</string>
+    <string name="gate_msg_main">One more thing,\nfellow DUFFLER!</string>
+    <string name="gate_msg_sub">Before you proceed, don\'t forget\nto confirm your account by\nclicking the link in the\nconfirmation email.</string>
+    <string name="send_mail"><u>Resend email</u></string>
+    <string name="marks">M A R K S</string>
+    <string name="tripboy">\@ t r i p b o y</string>
+    <string name="alarm_enable">Alarm enabled</string>
+    <string name="post_list_text">Yo check this out!</string>
+    <string name="just_now">JUST NOW</string>
+    <string name="alarm_icon">{fa-bell}</string>
+    <string name="welcome">Welcome</string>
+    <string name="internet_msg">No internet connection</string>
+    <string name="scanner">Scanner</string>
+    <string name="tour">Tour</string>
+    <string name="remaining_badges">R E M A I N I N G \u0020 B A D G E S</string>
+    <string name="change_email">Change email</string>
+    <string name="current_email">Current email</string>
+    <string name="new_email">New email</string>
+    <string name="update_email">Update email</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="enter_password">Enter password of atleast 8 character</string>
+    <string name="enter_email">Enter email or username</string>
+    <string name="enter_username">Enter username</string>
+    <string name="scan_yr_bagid">Scan your bag ID</string>
+    <string name="enter_location">Enter location</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="username_not_valid">Username already exit</string>
+    <string name="enter_password_valid">Password must have at least 8 character in which 1 lowercase, 1 uppercase and 1 special character</string>
+    <string name="check_valid_icon">{fa-check-circle}</string>
+    <string name="Ok">OK</string>
+    <string name="enter_new_email">Enter new email</string>
+    <string name="logout_msg">Are you sure want to logout..!</string>
+    <string name="pswd_change_msg">Are you sure want to change password..!</string>
+    <string name="policy">Privacy Policy</string>
+    <string name="no_record_found">No record found</string>
+    <string name="beacon_scanning">Beacon scanning...</string>
+    <string name="beacon_out_of_range">Beacon out of range</string>
+    <string name="country">Country</string>
+    <string name="unpair_msg">Are you sure want to unpair this beacon..?</string>
+    <string name="alerm_mode">Alarm modes</string>
+    <string name="motion_value">Motion value:</string>
+    <string name="motion_high">High</string>
+    <string name="motion_low">Low</string>
+    <string name="distance_value">Distance value:</string>
+    <string name="five_m">5m</string>
+    <string name="fifteen_m">15m</string>
+    <string name="duo_value">Duo value:</string>
+</resources>

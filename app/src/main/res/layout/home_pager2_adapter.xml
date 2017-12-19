@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:auto_fit="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:gravity="center">
+        <include layout="@layout/duffler_title" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:gravity="start">
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/home_pager_page2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:layout_below="@+id/imageView2"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/white"
+            android:maxLines="2"
+            android:textSize="20sp"
+            fontPath="@string/font_heading_black"
+            auto_fit:minTextSize="10sp"
+            android:id="@+id/tv_page2_bottom" />
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/home_pager_page2_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white"
+            android:maxLines="7"
+            android:textSize="17sp"
+            auto_fit:minTextSize="10sp"
+            android:id="@+id/tv_page1_desc" />
+
+        <me.grantland.widget.AutofitTextView
+            android:text="@string/site_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/red"
+            android:textSize="18sp"
+            auto_fit:minTextSize="10sp"
+
+            android:id="@+id/tv_page1_site" />
+    </LinearLayout>
+</LinearLayout>

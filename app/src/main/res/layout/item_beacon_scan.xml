@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/ll_add_beacon"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:onClick="onClick"
+    android:layout_height="@dimen/btn_hieght_profile_setting"
+    android:background="@color/white"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:id="@+id/tv_beacon_value" />
+
+
+
+    <com.joanzapata.iconify.widget.IconTextView
+        android:layout_height="40dp"
+        android:layout_width="40dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:textSize="@dimen/icon_text_size_arrow"
+        android:text="@string/right_icon"
+        android:textColor="@color/red"/>
+
+</LinearLayout>
