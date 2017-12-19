@@ -1,4 +1,4 @@
-package com.app.dufflertemp;
+package com.app.dufflertemp.model;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
@@ -20,7 +20,7 @@ public class ModelPostList {
     private String message;
     @SerializedName("Root")
     @Expose
-    private List<Root> root = new ArrayList<Root>();
+    private List<Root> root = new ArrayList<>();
 
     public String getStatus() {
         return status;

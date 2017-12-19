@@ -17,7 +17,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        fragment = new FragmentCreatePost();
+        //fragment = new FragmentCreatePost();
+        fragment = new FragmentListPosts();
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();

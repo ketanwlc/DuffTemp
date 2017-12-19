@@ -1,6 +1,5 @@
-package com.app.dufflertemp;
+package com.app.dufflertemp.adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -10,8 +9,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 
+import com.app.dufflertemp.R;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
 

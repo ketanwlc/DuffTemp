@@ -1,5 +1,7 @@
 package com.app.dufflertemp;
 
+import com.app.dufflertemp.model.ModelPostList;
+
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
@@ -243,7 +245,7 @@ public interface APIInteface {
 
     @FormUrlEncoded
     @POST("api/postlist")
-    Observable<Response<ResponseBody>> apiPostList(@Field("X-API-KEY") String X_API_KEY);
+    Observable<Response<ModelPostList>> apiPostList(@Field("X-API-KEY") String X_API_KEY);
 
 
     String POLICY_URL =  "https://duffler.com/pages/privacy-plicy";
