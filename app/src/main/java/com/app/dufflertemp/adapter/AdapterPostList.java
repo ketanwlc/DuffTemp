@@ -1,6 +1,7 @@
 package com.app.dufflertemp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
@@ -13,8 +14,10 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 import com.app.dufflertemp.Common;
+import com.app.dufflertemp.PostDetailActivity;
 import com.app.dufflertemp.R;
 import com.app.dufflertemp.model.ModelPostList;
+import com.google.gson.Gson;
 import com.joanzapata.iconify.widget.IconTextView;
 import com.squareup.picasso.Picasso;
 import com.squareup.picasso.Target;
@@ -50,7 +53,7 @@ public class AdapterPostList extends RecyclerView.Adapter<AdapterPostList.MyHold
     @Override
     public void onBindViewHolder(final MyHolder holder, final int position) {
 
-        ModelPostList.Root model = arrayList.get(position);
+        final ModelPostList.Root model = arrayList.get(position);
 
         if(!model.getUserAvatar().isEmpty()){
 
@@ -106,6 +109,18 @@ public class AdapterPostList extends RecyclerView.Adapter<AdapterPostList.MyHold
             holder.img_big.setImageResource(R.color.gray_dark);
         }
 
+        holder.linear_item_post_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // open Post Details screen
+                Gson gson = new Gson();
+                String tmp_str = gson.toJson(model, ModelPostList.Root.class);
+
+                Intent intent = new Intent(mContext, PostDetailActivity.class);
+                intent.putExtra("post_detail_key", tmp_str);
+                mContext.startActivity(intent);
+            }
+        });
 
         holder.tv_title.setText("@" + model.getUsername());
 
@@ -123,6 +138,7 @@ public class AdapterPostList extends RecyclerView.Adapter<AdapterPostList.MyHold
 
     public class MyHolder extends RecyclerView.ViewHolder {
 
+        LinearLayout linear_item_post_main;
         ImageView img_avatar;
         ImageView img_big;
         IconTextView img_item;
@@ -135,6 +151,7 @@ public class AdapterPostList extends RecyclerView.Adapter<AdapterPostList.MyHold
         public MyHolder(View itemView) {
             super(itemView);
 
+            linear_item_post_main = (LinearLayout) itemView.findViewById(R.id.linear_item_post_main);
             img_avatar = (ImageView) itemView.findViewById(R.id.imageView);
             img_big = (ImageView) itemView.findViewById(R.id.img_big);
             tv_title = (TextView) itemView.findViewById(R.id.tv_title);

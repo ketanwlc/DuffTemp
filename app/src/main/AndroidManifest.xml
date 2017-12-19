@@ -24,6 +24,8 @@
 
         <activity android:name=".SearchPostActivity" android:windowSoftInputMode="adjustPan"/>
 
+        <activity android:name=".PostDetailActivity" android:windowSoftInputMode="adjustPan"/>
+
     </application>
 
 </manifest>
