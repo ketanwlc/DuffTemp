@@ -1,49 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:orientation="vertical" android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:background="@drawable/back_img">
-<include layout="@layout/post_search_title"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img"
+    android:orientation="vertical">
+
+    <include layout="@layout/post_search_title" />
 
     <LinearLayout
-        android:orientation="vertical" android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/toolbar_new">
-<EditText
-    android:id="@+id/edit_search"
-    android:layout_height="45dp"
-    android:layout_width="match_parent"
-    android:background="@color/white"
-    android:paddingLeft="10dp"
-    android:layout_margin="15dp"
-    android:hint="@string/keyword_username"/>
-        </LinearLayout>
-
-<LinearLayout
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
-    <TextView
-        android:text="@string/follow_duffler_"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="10dp"
-        android:visibility="invisible"
+        android:background="@color/toolbar_new"
+        android:orientation="horizontal"
         android:gravity="center_vertical"
-        android:layout_gravity="center"
-        android:textColor="@color/dray_much"
-        android:textSize="14sp" />
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycle_view"
-        android:paddingRight="20dp"
-        android:paddingLeft="20dp"
-        android:paddingBottom="20dp"
-        android:visibility="invisible"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:padding="15dp">
 
-</LinearLayout>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:src="@drawable/search_ic"
+            android:background="@color/white"/>
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="@string/keyword_username"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:inputType="textCapSentences"
+            android:imeOptions="actionSearch"/>
+
+        <ImageView android:id="@+id/img_search_clear"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:padding="10dp"
+            android:src="@drawable/close_ic"
+            android:background="@color/white"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/follow_duffler_"
+            android:textColor="@color/dray_much"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"/>
+
+    </LinearLayout>
 </LinearLayout>

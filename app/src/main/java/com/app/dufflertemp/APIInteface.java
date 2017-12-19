@@ -248,6 +248,12 @@ public interface APIInteface {
     Observable<Response<ModelPostList>> apiPostList(@Field("X-API-KEY") String X_API_KEY);
 
 
+    @FormUrlEncoded
+    @POST("api/searchpost")
+    Observable<Response<ModelPostList>> apiPostSearchList(@Field("X-API-KEY") String X_API_KEY,
+                                                          @Field("username") String search_text);
+
+
     String POLICY_URL =  "https://duffler.com/pages/privacy-plicy";
 
 
