@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_img"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_profile_setting" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_radar_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/radar_view_bg"/>
+
+        <ImageView
+            android:id="@+id/img_mobile"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mobile_ic" />
+
+        <FrameLayout
+            android:id="@+id/frame_device_area"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_mobile">
+
+            <ImageView
+                android:id="@+id/img_device"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY"
+                android:src="@drawable/dot_ic" />
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

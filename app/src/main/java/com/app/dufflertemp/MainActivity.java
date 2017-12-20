@@ -1,6 +1,7 @@
 package com.app.dufflertemp;
 
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -18,13 +19,16 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //fragment = new FragmentCreatePost();
-        fragment = new FragmentListPosts();
+//        fragment = new FragmentListPosts();
+//
+//        FragmentManager fragmentManager = getSupportFragmentManager();
+//        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+//        ft.replace(R.id.frame_main, fragment);
+//        ft.addToBackStack(null);
+//        ft.commit();
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.frame_main, fragment);
-        ft.addToBackStack(null);
-        ft.commit();
+        startActivity(new Intent(this, RadarViewActivity.class));
+
     }
 
     @Override

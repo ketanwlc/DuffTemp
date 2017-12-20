@@ -26,6 +26,8 @@
 
         <activity android:name=".PostDetailActivity" android:windowSoftInputMode="adjustPan"/>
 
+        <activity android:name=".RadarViewActivity" android:windowSoftInputMode="adjustPan"/>
+
     </application>
 
 </manifest>

@@ -711,4 +711,10 @@ public class Common {
     public static RequestBody getStringPlain(String temp){
             return RequestBody.create(MediaType.parse("text/plain"),temp);
     }
+
+    // length = 8, startWith = D, other Digits only
+    public static boolean checkBagID(String bagId_str){
+        return bagId_str.length()==8 && bagId_str.startsWith("D") && bagId_str.substring(1).matches("[0-9]+");
+    }
+
 }

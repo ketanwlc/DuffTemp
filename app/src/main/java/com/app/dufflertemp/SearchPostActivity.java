@@ -183,7 +183,7 @@ public class SearchPostActivity extends AppCompatActivity{
 
             @Override
             public void onError(Throwable e) {
-
+                Log.d("response_reg","...onError..." + e.getMessage());
             }
 
             @Override
@@ -207,6 +207,9 @@ public class SearchPostActivity extends AppCompatActivity{
 
                             //Log.d("response_reg","...postLists.."+postLists.get(0).getDescription());
 
+                        }
+                        else{
+                            Log.d("response_reg..","...next.."+responseBodyResponse.body().getMessage());
                         }
 
                     }
